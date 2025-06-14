@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <!-- Script Bootstrap -->
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Navbar -->
@@ -46,10 +46,10 @@
     </div>
   </nav>
 
-  <!-- Espaço abaixo da navbar -->
+
   <div style="height: 120px;"></div>
 
-  <!-- Minicard com preview -->
+  
   <div class="card mb-3 mx-auto" style="width: 18rem;">
     <img src="" alt="imagem2" class="card-img-top" id="imagemdoartigo">
     <div class="card-body">
@@ -58,21 +58,21 @@
       <a href="artigo2.html" class="btn btn-primary">Ler mais</a>
     </div>
   </div>
-  <!-- Script correto abaixo do HTML -->
+ 
   <script>
-    // Declaração primeiro
+   
     const titulo2 = "Nivelando o Mundo";
     const artigo2 = "Em abril de 1649, a terra de St. George's Hill, em Surrey, Inglaterra, foi remexida. Um grupo de homens e mulheres que se autodenominavam 'Verdadeiros Niveladores', conhecidos na história como 'Escavadores'"
     const imagem2 = "imagens2/carrosel2.pg123.jpg" ;      
     // Gera o preview com as 20 primeiras palavras
     const preview2 = artigo2.split(" ").slice(0, 20).join(" ") + "...";
 
-    // Coloca o título e preview no HTML
+   
     document.getElementById("titulo1").innerText = titulo2;
     document.getElementById("preview1").innerText = preview2;
     document.getElementById("imagemdoartigo").src = imagem2;
 
-    // Armazena no localStorage para usar na outra página
+    
     localStorage.setItem("titulo", titulo2);
     localStorage.setItem("conteudo", artigo2);
     localStorage.setItem("imagem",imagem2);
