@@ -25,16 +25,12 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="offcanvasNavbarLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-  </div>
-  <div class="offcanvas-body">
+      <div class="offcanvas offcanvas-end" id="navbarOffcanvasLg">
+        <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item"><a class="nav-link" href="filosofia.html">Filosofia</a></li>
-            <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre Nós</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Cultura</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre nos</a></li>
+    
           </ul>
           <form class="d-flex mt-3" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar">
@@ -53,7 +49,7 @@
   <!-- Espaço abaixo da navbar -->
   <div style="height: 120px;"></div>
 
-  
+  <!-- Minicard com preview -->
   <div class="card mb-3 mx-auto" style="width: 18rem;">
     <img src="" alt="imagem2" class="card-img-top" id="imagemdoartigo">
     <div class="card-body">
@@ -62,21 +58,21 @@
       <a href="artigo2.html" class="btn btn-primary">Ler mais</a>
     </div>
   </div>
-  
+  <!-- Script correto abaixo do HTML -->
   <script>
-    
+    // Declaração primeiro
     const titulo2 = "Nivelando o Mundo";
     const artigo2 = "Em abril de 1649, a terra de St. George's Hill, em Surrey, Inglaterra, foi remexida. Um grupo de homens e mulheres que se autodenominavam 'Verdadeiros Niveladores', conhecidos na história como 'Escavadores'"
     const imagem2 = "imagens2/carrosel2.pg123.jpg" ;      
     // Gera o preview com as 20 primeiras palavras
     const preview2 = artigo2.split(" ").slice(0, 20).join(" ") + "...";
 
-   
+    // Coloca o título e preview no HTML
     document.getElementById("titulo1").innerText = titulo2;
     document.getElementById("preview1").innerText = preview2;
     document.getElementById("imagemdoartigo").src = imagem2;
 
-    
+    // Armazena no localStorage para usar na outra página
     localStorage.setItem("titulo", titulo2);
     localStorage.setItem("conteudo", artigo2);
     localStorage.setItem("imagem",imagem2);
